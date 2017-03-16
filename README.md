@@ -12,20 +12,14 @@ The final scores were calculated as a running total that accumulated by running 
 **My Strategy**
 --------------------
 
-----------
-
  - Copy Cat and Near Copy Cat detection
  - Hold if pure Copy Cat is detected. Mostly Hold if Near Copy Cat is detected
  - When in doubt, Testify
  - Add some randomness
 
-----------
-
 I played around by running different simple strategies against one another and determined that its usually best to always Testify unless there is a Copy Cat. If there was a Copy Cat then the best move was to always Hold.
 
 Another thing that I noticed is that certain strategies could become locked into a repeating pattern with each other. In order to break these cycles, I introduced just a little bit of randomness.
-
-----------
 
 **Copy Cat detection**
 
