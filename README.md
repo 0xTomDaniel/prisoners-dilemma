@@ -1,4 +1,4 @@
-#Prisoner's Dilemma contest winner
+# Prisoner's Dilemma contest winner
 *My 1st place Prisoner's Dilemma strategy (Apr 18, 2008).*
 
 ----------
