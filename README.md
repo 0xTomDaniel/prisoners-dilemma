@@ -33,8 +33,8 @@ If my formula learned that the other player was a Copy Cat then it would begin t
 
 When I created this program, I had zero knowledge of machine learning nor evolution for that matter. It was only recently that I realized what I had implemented here was very rudimentary machine learning.
 
-I made one feature based on the play history of my opponent which was Copy Cat probability. This was calculated based on the percentage of moves played by the opponent that were a copy of my previous move. If a particular threshold was crossed that indicated the other application was mostly a Copy Cat, then I would choose to Hold. Otherwise I would Testify. The major problem now was choosing the correct threshold.
+Copy Cat probability was the one feature based on the the opponents play history. This was calculated from the percentage of moves played by the opponent that were a copy of my previous move. If a particular threshold was crossed that indicated the other strategy was mostly a Copy Cat, then I would choose to Hold. Otherwise I would Testify. The major problem now was choosing the correct threshold.
 
 In order to choose the correct threshold, I needed to get some feedback on different threshold options. So I created another program that would run my strategy against a variety of other common strategies for thousands of iterations, changing the threshold randomly after an 'epoch' and comparing the results to the new 'epoch'. I left this running over night and discovered the 'goldilocks zone' for threshold options.
 
-At this point I further tuned the threshold but starting from the lower end of the 'goldilocks zone' and slowly increasing the threshold until my strategy wouldn't produce a better result. I found the best threshold to be 88% probability of a Copy Cat should Hold.
+At this point I further tuned the threshold starting from the lower end of the 'goldilocks zone' and slowly increasing it until my strategy wouldn't produce a better result. I found the best threshold to be 88% probability of a Copy Cat when I chose to always Hold above the threshold.
