@@ -1,19 +1,20 @@
 # Prisoner's Dilemma contest winner
 *My 1st place Prisoner's Dilemma strategy (Apr 18, 2008).*
 
-----------
+---
 
 I wrote this Perl app as part of a graded class project. It competed against the entire collection of Prisoner's Dilemma strategies submitted by students of CIT145 from the previous 10 years. This included several different strategies written by the instructor.
 
 The final scores were calculated as a running total that accumulated by running all strategies against one another for several hundred rounds each. My strategy completed as the first place winner with the lowest final score (or years in prison).
 
-----------
+---
 
 **My Strategy**
---------------------
+---
 
  - Copy Cat and Near Copy Cat detection
  - Hold if pure Copy Cat is detected. Mostly Hold if Near Copy Cat is detected
+ - Crude machine learning
  - When in doubt, Testify
  - Add some randomness
 
@@ -26,3 +27,9 @@ Another thing that I noticed is that certain strategies could become locked into
 In order to detect a Copy Cat, a series of my moves could not be based upon the other player's choice. I decided to embed a short preamble that I could use to detect if it was being played back to me by a Copy Cat.
 
 If my formula learned that the other player was a Copy Cat then it would begin to play Hold for the next moves. It would continue to monitor for any deviations from a pure Copy Cat.
+
+**Machine learning**
+
+When I created this program I had no knowledge of machine learning. It was only recently that I realized what I had implemented here was very rudimentary machine learning.
+
+I created several features based on the play history of my opponent. 
