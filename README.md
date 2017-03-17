@@ -7,6 +7,8 @@ I wrote this Perl app as part of a graded class project. It competed against the
 
 The final scores were calculated as a running total that accumulated by running all strategies against one another for several hundred rounds each. My strategy completed as the first-place winner with the lowest final score (or years in prison).
 
+*Note: I was very new to programming, so this code is not very elegant.*
+
 ---
 
 ## My Strategy
