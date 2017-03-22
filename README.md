@@ -21,8 +21,6 @@ The final scores were calculated as a running total that accumulated by running 
 
 I played around by running different simple strategies against one another and determined that it was usually best to always Testify unless there was a Copy Cat. If there was a Copy Cat then the best move was to always Hold.
 
-Another thing that I noticed is that certain strategies could become locked into a repeating pattern with each other. In order to break these cycles, I introduced just a little bit of randomness.
-
 ### Copy Cat detection
 
 In order to detect a Copy Cat, a series of my moves could not be based upon the other player's choice. I decided to embed a short preamble that I could use to detect if it was being played back to me by a Copy Cat.
