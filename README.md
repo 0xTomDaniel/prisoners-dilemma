@@ -19,7 +19,7 @@ The final scores were calculated as a running total that accumulated by running 
  - When in doubt, Testify
  - Add some randomness
 
-I played around by running different simple strategies against one another and determined that it's usually best to always Testify unless there is a Copy Cat. If there was a Copy Cat then the best move was to always Hold.
+I played around by running different simple strategies against one another and determined that it was usually best to always Testify unless there was a Copy Cat. If there was a Copy Cat then the best move was to always Hold.
 
 Another thing that I noticed is that certain strategies could become locked into a repeating pattern with each other. In order to break these cycles, I introduced just a little bit of randomness.
 
@@ -38,3 +38,7 @@ Copy Cat probability was the single feature used based on the the opponents play
 In order to choose the correct threshold, I needed to get some feedback on different threshold options. So I created another program that would run my strategy against a variety of other common strategies for thousands of iterations, changing the threshold randomly after an 'epoch' and comparing the results to the new 'epoch'. I left this running over night and discovered the 'goldilocks zone' for threshold options.
 
 At this point I further tuned the threshold starting from the lower end of the 'goldilocks zone' and slowly increasing it until my strategy wouldn't produce a better result. I found the best threshold to be 88% probability of a Copy Cat when I chose to always Hold above the threshold.
+
+### Randomness
+
+The main reason that I decided to invoke randomness was to throw off any other strategies that were trying to predict my moves. Thinking back, I believe I manually tested different values until I was comfortable with the results. Unfortunately, it has been too long to remember the exact details.
