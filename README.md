@@ -39,4 +39,6 @@ At this point I further tuned the threshold starting from the lower end of the '
 
 ### Randomness
 
+My strategy also invoked 0.5% of randomness. This meant that after my program decided which move to play it would play the opposite move 0.5% of the time.
+
 The main reason that I decided to invoke randomness was to throw off any other strategies that were trying to predict my moves. Thinking back, I believe I manually tested different values until I was comfortable with the results. Unfortunately, it has been too long to remember the exact details.
