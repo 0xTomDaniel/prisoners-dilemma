@@ -33,7 +33,7 @@ If my formula learned that the other player was a Copy Cat then it would begin t
 
 When I created this program, I had zero knowledge of machine learning nor evolution for that matter. It was only recently that I realized what I had implemented here was very rudimentary machine learning.
 
-Copy Cat probability was the one feature based on the the opponents play history. This was calculated from the percentage of moves played by the opponent that were a copy of my previous move. If a particular threshold was crossed that indicated the other strategy was mostly a Copy Cat, then I would choose to Hold. Otherwise I would Testify. The major problem now was choosing the correct threshold.
+Copy Cat probability was the single feature used based on the the opponents play history. This was calculated from the percentage of moves played by the opponent that were a copy of my previous move. If a particular threshold was crossed that indicated that the other strategy was mostly a Copy Cat, then I would choose to Hold. Otherwise I would Testify. The major problem now was choosing the correct threshold.
 
 In order to choose the correct threshold, I needed to get some feedback on different threshold options. So I created another program that would run my strategy against a variety of other common strategies for thousands of iterations, changing the threshold randomly after an 'epoch' and comparing the results to the new 'epoch'. I left this running over night and discovered the 'goldilocks zone' for threshold options.
 
